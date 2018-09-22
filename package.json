@@ -1,0 +1,15 @@
+{
+  "name": "tareks-web-portfolio",
+  "version": "0.1.0",
+  "description": "This is my web portfolio with information on my experience",
+  "author": "Tarek Safa",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/broodingcoin/broodingcoin.github.io"
+  },
+  "dependencies": {}
+}
