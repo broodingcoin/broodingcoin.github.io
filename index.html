@@ -3,7 +3,8 @@
     <title>Tareks Portfolio</title>
     <meta charset="utf-8">
   </head>
-  <body>  
+  <body>
+    <div id="preInfo" style="display:block;">
       <p>
       Hello there! I have chosen to abandon this page and instead have<br/>
       heroku host my profile information at this link: <a href="https://tarekportfolio.herokuapp.com/">New website</a><br/>
@@ -11,6 +12,12 @@
       pressing "Continue":<br/>
       </p>
       <button type="button" onclick="newDisplay()">Continue</button>
+    </div>
+    <script>
+    function newDisplay() {
+      document.getElementById('myInfo').style.display = block;
+      document.getElementById('preInfo').style.display = none;
+    }
     </script>
   </body>
 </html>
