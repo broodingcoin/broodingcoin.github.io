@@ -1,10 +1,19 @@
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <link rel="stylesheet" href="styles.css">
     <meta charset="utf-8">
   </head>
   <body>
+    <div id="preInfo" style="display:block;">
+      <p>
+      Hello there! I have chosen to abandon this page and instead have<br/>
+      heroku host my profile information at this link: <a href="">New website</a><br/>
+      in the meantime, you can still view some of my information by<br/>
+      pressing "Continue":<br/>
+      </p>
+      <button type="button" onclick="newDisplay()">Continue</button>
+    </div>
+    <div id="myInfo" style="display:none;">
   		<h1>Information about Tarek Safa</h1>
 
   		<img src="headshot.jpg" style="width:18%;" style="height:18%;">
@@ -36,6 +45,12 @@
       		<li>WPI</li>
       		<li>SizzleScene, a TrampleZone application</li>
     		</ul>
-
+    </div>
+    <script>
+    function newDisplay() {
+      document.getElementById('myInfo').style.display = block;
+      document.getElementById('preInfo').style.display = none;
+    }
+    </script>
   </body>
 </html>
